@@ -1,0 +1,35 @@
+api-version: '1.21'
+authors: [OoLunar]
+description: A Paper/Folia plugin to allow permissible players to bypass the server player limit.
+folia-supported: true
+load: STARTUP
+main: com.four_year_smp.four_player_limit.FourPlayerLimitPlugin
+name: 4PlayerLimit
+prefix: 4PlayerLimit
+version: 1.0.0
+website: https://github.com/4-Year-SMP/4PlayerLimit
+
+permissions:
+  fourplayerlimit.bypass:
+    default: op
+    description: Allows the player to bypass the player limit.
+  fourplayerlimit.reload:
+    default: op
+    description: Allows the player to reload the plugin configuration.
+  fourplayerlimit.set:
+    default: op
+    description: Allows the player to set the player limit.
+
+commands:
+  4pl-get:
+    description: Gets the current player limit.
+    permission: fourplayerlimit.set
+    usage: /4pl-get
+  4pl-reload:
+    description: Reloads the plugin configuration.
+    permission: fourplayerlimit.reload
+    usage: /4pl-reload
+  4pl-set:
+    description: Sets the player limit.
+    permission: fourplayerlimit.set
+    usage: /4pl-set <limit>

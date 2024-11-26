@@ -1,0 +1,6 @@
+prefix: '&8[&c4PlayerLimit&8]&7'
+reloaded: 'Configuration reloaded.'
+
+player-limit-get: 'The current player limit is &c{0}'
+player-limit-set: 'The player limit has been set to &c{0}'
+player-limit-set-invalid: 'Invalid player limit. Please enter a valid whole number. Value passed: &c{0}'
